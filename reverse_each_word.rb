@@ -3,9 +3,9 @@ def reverse_each_word(sentence)
 
   words = sentence.gsub(/\s+/m, ' ').strip.split(" ")
   words.each do |word|
-   word.reverse
+  word.reverse
 end
-return reversed.join(" ")
+return sentence.join(" ")
 
 end
 

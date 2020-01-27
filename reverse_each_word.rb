@@ -1,7 +1,7 @@
 sentence=[]
 def reverse_each_word(sentence)
 reversed = []
-  words = sentence.scan()
+  words = sentence.scan(/\w+/)
   words.each do |word|
   reversed << word.reverse
 end
